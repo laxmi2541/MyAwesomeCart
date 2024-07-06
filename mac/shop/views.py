@@ -1,6 +1,11 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+import django.shortcuts
 
 
 def index(request):
-    return render(request, 'shop/index.html')
+    return django.shortcuts.render(request, 'shop/index.html')
+def about(request):
+    return django.shortcuts.render(request, 'shop/about.html')
+
+
+def checkout():
+    return None

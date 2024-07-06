@@ -1,5 +1,5 @@
-from django.shortcuts import render
+import django.shortcuts
 
 
 def index(request):
-    return render(request, "blog/index.html")
+    return django.shortcuts.render(request, 'blog/index.html')
